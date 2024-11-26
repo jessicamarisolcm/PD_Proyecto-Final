@@ -1,0 +1,3 @@
+80% de las imágenes para entrenamiento 
+20% de las imágenes para validación
+
