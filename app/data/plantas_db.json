@@ -1,0 +1,5 @@
+{
+    "Rose": {"venomous": false, "safe_for_pets": true, "medicinal": false},
+    "Lily": {"venomous": true, "safe_for_pets": false, "medicinal": false},
+    "Cactus": {"venomous": false, "safe_for_pets": true, "medicinal": true}
+}
