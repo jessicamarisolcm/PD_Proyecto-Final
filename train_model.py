@@ -1,11 +1,13 @@
-import tensorflow as tf
-from tensorflow.keras.preprocessing.image import ImageDataGenerator
-from tensorflow.keras.models import Sequential
-from tensorflow.keras.layers import Conv2D, MaxPooling2D, Flatten, Dense
+import tensorflow as keras
+from keras._tf_keras.keras.preprocessing.image import ImageDataGenerator
+from keras._tf_keras.keras.models import Sequential
+from keras._tf_keras.keras.layers import Conv2D, MaxPooling2D, Flatten, Dense
+import os
+os.environ['TF_ENABLE_ONEDNN_OPTS'] = '0'
 
 # Rutas 
-train_dir = "PlantVillage_Split/train"
-val_dir = "PlantVillage_Split/validation"
+train_dir = "PlantVillage/train"
+val_dir = "PlantVillage/validation"
 
 # Generadores de imágenes
 train_datagen = ImageDataGenerator(rescale=1.0/255.0)
